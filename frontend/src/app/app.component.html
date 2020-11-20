@@ -1,9 +1,17 @@
-<div style="text-align:center">
-  <h1>Exams</h1>
-</div>
-<h2>Here are the exams created so far: </h2>
 <ul>
-  <li *ngFor="let exam of examsList">
-    {{exam.title}}
-  </li>
+  <div class="container">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <li class="homeIcon"></li>
 </ul>
+<div class="mainView">
+<h1>
+  Welcome !
+</h1>
+</div>
+<div class="productView">
+  <app-productCard *ngFor="let product of productsList" [product]="product"></app-productCard>
+</div>
+

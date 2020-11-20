@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ExamsApiService } from './exams/exams.service';
+import { ExamsApiService } from './Models/exams.service';
+import { ProductService } from './Models/product.service';
+import { ProductCardComponent } from './components/ProductCardComponent/productcard.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent ,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
@@ -15,7 +18,7 @@ import { ExamsApiService } from './exams/exams.service';
     HttpClientModule,
   
   ],
-  providers: [ExamsApiService],
+  providers: [ExamsApiService,ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
