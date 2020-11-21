@@ -10,3 +10,11 @@ div.col-lg-4 {
   border: 0px;
   border-color: white;
 }
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
