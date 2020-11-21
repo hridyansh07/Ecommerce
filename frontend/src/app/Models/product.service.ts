@@ -22,4 +22,9 @@ export class ProductService
         return this.httpClient.get<Product>(`${environment.API_URL}/prodcut/${productId}`)
     }
 
+    getFeatured() : Observable<Product>
+    {
+        return this.httpClient.get<Product>(`${environment.API_URL}/featured`);
+    }
+
 }

@@ -1,17 +1,17 @@
-<ul>
-  <div class="container">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <li class="homeIcon"></li>
-</ul>
-<div class="mainView">
-<h1>
-  Welcome !
-</h1>
+<div class="container-fluid">
+  <div class="row">  
+    <div class="col-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <app-header></app-header>
+          </div>
+        </div>
+      </div>
+  <app-featured></app-featured>
+  <app-productCard></app-productCard>
+  <app-banner></app-banner>
+  <app-footer></app-footer>
+      </div>
+    </div>
 </div>
-<div class="productView">
-  <app-productCard *ngFor="let product of productsList" [product]="product"></app-productCard>
-</div>
-

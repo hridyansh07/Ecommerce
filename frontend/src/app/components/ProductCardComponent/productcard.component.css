@@ -1,0 +1,12 @@
+img:hover {
+  transform: scale(00.9);
+}
+
+img {
+  transition: all 300ms;
+}
+
+div.col-lg-4 {
+  border: 0px;
+  border-color: white;
+}
